@@ -1,0 +1,28 @@
+.briefcase-nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 106px;
+    padding-bottom: 20px;
+}
+.briefcase__button {
+    cursor: pointer;
+    background: rgba(245, 244, 250, 1);
+    color:$color-tex-primary;
+    border-radius: 4px;
+    border: 0;
+    padding: 6px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    &:visited {
+        background-color: $accent-color;
+        color:$primary-background-color;  
+    }
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        color:$primary-background-color;
+    }
+}

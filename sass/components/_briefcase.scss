@@ -1,0 +1,11 @@
+.briefcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+@import "../sections/briefcase/nav";
+@import "../sections/briefcase/cards";

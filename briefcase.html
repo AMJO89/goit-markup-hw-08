@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <!--Externo-->
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="stylesheet" href="./sass/main.min.css" />
+  </head>
+  <body class="body">
+    <header class="box-header">
+      <div class="container">
+        <nav class="header-nav">
+          <a href="./index.html" class="logo">WebStudio</a>
+        </nav>
+        <ul class="header-nav__list">
+          <li class="header-nav__item">
+            <a
+              href="./index.html"
+              class="header-nav__link nav__link--current"
+              rel="noopener noreferrer"
+              >Study</a
+            >
+          </li>
+          <li class="header-nav__item">
+            <a
+              href="./briefcase.html"
+              class="header-nav__link"
+              rel="noopener noreferrer"
+              >Briefcase</a
+            >
+          </li>
+          <li class="header-nav__item">
+            <a
+              href="./contacts.html"
+              class="header-nav__link"
+              rel="noopener noreferrer"
+              >Contacts</a
+            >
+          </li>
+        </ul>
+        <ul class="header-contact__list">
+          <li class="header-contact__item" width="161px">
+            <a href="mailto:info@devstudio.com" class="header-contact__link">
+              <svg width="16px" height="12px">
+                <use href="./Img/icon.svg#icon-Sobre"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="header-contact__item" width="168px">
+            <a href="phone:+52 55 5529 6000" class="header-contact__link">
+              <svg width="10px" height="16px">
+                <use
+                  href="./Img/icon.svg#icon-Celular"
+                  margin-right="10px"
+                ></use>
+              </svg>
+              +52 55 5529 6000</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="line"></div>
+    <main class="briefcase">
+      <div class="container">
+        <section class="briefcase-nav">
+          <ul class="briefcase-nav__list">
+            <li class="briefcase-nav__buttons">
+              <button class="briefcase__button" type="button">All</button>
+              <button class="briefcase__button" type="button">Websites</button>
+              <button class="briefcase__button" type="button">
+                Applications
+              </button>
+              <button class="briefcase__button" type="button">Design</button>
+              <button class="briefcase__button" type="button">Marketing</button>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="container">
+        <section class="briefcase-cards">
+          <ul class="briefcase-cards__list">
+            <li class="briefcase-cards__item">
+              <div class="card__product">
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./Img/Tablet/webp/web site.webp 1x,
+                      ./Img/Tablet/webp/web site@2.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./Img/Tablet/jpg/web site.jpg 1x,
+                      ./Img/Tablet/jpg/web site@2.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 280px)"
+                    srcset="
+                      ./Img/Mobile/webp/web site.webp 1x,
+                      ./images/Mobile/web site@2.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 280px)"
+                    srcset="
+                      ./Img/Mobile/jpg/web site.jpg 1x,
+                      ./Img/Mobile/jpg/web site@2.jpg 2x
+                    "
+                  />
+                  <img src="./Img/web site.jpg" alt="TecnoCrack website" />
+                </picture>
+                <span class="product__overlap"
+                  >Tecnoduck is a state-of-the-art coronavirus distribution
+                  platform. Companies use this platform for digital espionage
+                  and attacks on competitors' secure servers.</span
+                >
+              </div>
+              <h3 class="product__title">Tecnoduck</h3>
+              <p class="product__text">Website</p>
+            </li>
+            <li class="briefcase-cards__item">
+              <div class="card__product">
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./Img/Tablet/webp/basquetball.webp   1x,
+                      ./Img/Tablet/webp/basquetball@2.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./Img/Tablet/jpg/basquetball.jpg   1x,
+                      ./Img/Tablet/jpg/basquetball@2.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 280px)"
+                    srcset="
+                      ./Img/Mobile/webp/basquetball.webp 1x,
+                      ./images/Mobile/basquetball@2.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 280px)"
+                    srcset="
+                      ./Img/Mobile/jpg/basquetball.jpg   1x,
+                      ./Img/Mobile/jpg/basquetball@2.jpg 2x
+                    "
+                  />
+                  <img src="./Img/basquetball.jpg" alt="TecnoCrack website" />
+                </picture>
+                <span class="product__overlap">...</span>
+              </div>
+              <h3 class="product__title">New Orleans vs Gold Star Poster</h3>
+              <p class="product__text">Design</p>
+            </li>
+            <li class="briefcase-cards__item">
+              <div class="card__product">
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./Img/Tablet/webp/seafood.webp   1x,
+                      ./Img/Tablet/webp/seafood@2.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./Img/Tablet/jpg/seafood.jpg   1x,
+                      ./Img/Tablet/jpg/seafood@2.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 280px)"
+                    srcset="
+                      ./Img/Mobile/webp/seafood.webp 1x,
+                      ./images/Mobile/seafood@2.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 280px)"
+                    srcset="
+                      ./Img/Mobile/jpg/seafood.jpg   1x,
+                      ./Img/Mobile/jpg/seafood@2.jpg 2x
+                    "
+                  />
+                  <img src="./Img/seafood.jpg" alt="TecnoCrack website" />
+                </picture>
+                <span class="product__overlap">....</span>
+              </div>
+              <h3 class="product__title">Seafood Restaurant</h3>
+              <p class="product__text">Applications</p>
+            </li>
+            <li class="briefcase-cards__item">
+              <div class="card__product">
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./Img/Tablet/webp/headphones.webp 1x,
+                      ./Img/Tablet/webp/headphones.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./Img/Tablet/jpg/headphones.jpg 1x,
+                      ./Img/Tablet/jpg/headphones.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 280px)"
+                    srcset="
+                      ./Img/Mobile/webp/headphones.webp 1x,
+                      ./images/Mobile/headphones.webp   2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 280px)"
+                    srcset="
+                      ./Img/Mobile/jpg/headphones.jpg 1x,
+                      ./Img/Mobile/jpg/headphones.jpg 2x
+                    "
+                  />
+                  <img src="./Img/headphones.jpg" alt="TecnoCrack website" />
+                </picture>
+                <span class="product__overlap">....</span>
+              </div>
+              <h3 class="product__title">Prime project</h3>
+              <p class="product__text">Marketing</p>
+            </li>
+            <li class="briefcase-cards__item">
+              <div class="card__product">
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./Img/Tablet/webp/box.webp   1x,
+                      ./Img/Tablet/webp/box@2.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./Img/Tablet/jpg/box.jpg   1x,
+                      ./Img/Tablet/jpg/box@2.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 280px)"
+                    srcset="
+                      ./Img/Mobile/webp/box.webp 1x,
+                      ./images/Mobile/box@2.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 280px)"
+                    srcset="
+                      ./Img/Mobile/jpg/box.jpg   1x,
+                      ./Img/Mobile/jpg/box@2.jpg 2x
+                    "
+                  />
+                  <img src="./Img/box.jpg" alt="TecnoCrack website" />
+                </picture>
+                <span class="product__overlap">....</span>
+              </div>
+              <h3 class="product__title">Project Boxes</h3>
+              <p class="product__text">Applications</p>
+            </li>
+            <li class="briefcase-cards__item">
+              <div class="card__product">
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./Img/Tablet/webp/screen.webp   1x,
+                      ./Img/Tablet/webp/screen@2.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./Img/Tablet/jpg/screen.jpg   1x,
+                      ./Img/Tablet/jpg/screen@2.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 280px)"
+                    srcset="
+                      ./Img/Mobile/webp/screen.webp 1x,
+                      ./images/Mobile/screen@2.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 280px)"
+                    srcset="
+                      ./Img/Mobile/jpg/screen.jpg   1x,
+                      ./Img/Mobile/jpg/screen@2.jpg 2x
+                    "
+                  />
+                  <img src="./Img/screen.jpg" alt="TecnoCrack website" />
+                </picture>
+                <span class="product__overlap">....</span>
+              </div>
+              <h3 class="product__title">Inspiration has no limits</h3>
+              <p class="product__text">Website</p>
+            </li>
+            <li class="briefcase-cards__item">
+              <div class="card__product">
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./Img/Tablet/webp/magazine.webp   1x,
+                      ./Img/Tablet/webp/magazine@2.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./Img/Tablet/jpg/magazine.jpg   1x,
+                      ./Img/Tablet/jpg/magazine@2.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 280px)"
+                    srcset="
+                      ./Img/Mobile/webp/magazine.webp 1x,
+                      ./images/Mobile/magazine@2.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 280px)"
+                    srcset="
+                      ./Img/Mobile/jpg/magazine.jpg   1x,
+                      ./Img/Mobile/jpg/magazine@2.jpg 2x
+                    "
+                  />
+                  <img src="./Img/magazine.jpg" alt="TecnoCrack website" />
+                </picture>
+                <span class="product__overlap">....</span>
+              </div>
+              <h3 class="product__title">Limited edition</h3>
+              <p class="product__text">Design</p>
+            </li>
+            <li class="briefcase-cards__item">
+              <div class="card__product">
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./Img/Tablet/webp/label.webp   1x,
+                      ./Img/Tablet/webp/label@2.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./Img/Tablet/jpg/label.jpg   1x,
+                      ./Img/Tablet/jpg/label@2.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 280px)"
+                    srcset="
+                      ./Img/Mobile/webp/label.webp 1x,
+                      ./images/Mobile/label@2.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 280px)"
+                    srcset="
+                      ./Img/Mobile/jpg/label.jpg   1x,
+                      ./Img/Mobile/jpg/label@2.jpg 2x
+                    "
+                  />
+                  <img src="./Img/label.jpg" alt="TecnoCrack website" />
+                </picture>
+                <span class="product__overlap">....</span>
+              </div>
+              <h3 class="product__title">LAB project</h3>
+              <p class="product__text">Marketing</p>
+            </li>
+            <li class="briefcase-cards__item">
+              <div class="card__product">
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./Img/Tablet/webp/laptop.webp   1x,
+                      ./Img/Tablet/webp/laptop@2.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./Img/Tablet/jpg/laptop.jpg   1x,
+                      ./Img/Tablet/jpg/laptop@2.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 280px)"
+                    srcset="
+                      ./Img/Mobile/webp/laptop.webp 1x,
+                      ./images/Mobile/laptop@2.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 280px)"
+                    srcset="
+                      ./Img/Mobile/jpg/laptop.jpg   1x,
+                      ./Img/Mobile/jpg/laptop@2.jpg 2x
+                    "
+                  />
+                  <img src="./Img/laptop.jpg" alt="TecnoCrack website" />
+                </picture>
+                <span class="product__overlap">....</span>
+              </div>
+              <h3 class="product__title">Growing business</h3>
+              <p class="product__text">Applications</p>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="box-footer">
+      <div class="container">
+        <section class="footer-contact">
+          <a href="#" class="logo">WebStudio</a>
+          <address>
+            <ul class="footer-contact__list">
+              <li class="footer-contact__item">
+                <a
+                  href="#"
+                  class="footer-contact__link footer-contact__link--address"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Calz. Ticomán 500, Ciudad de México, CDMX, México</a
+                >
+              </li>
+              <li class="footer-contact__item">
+                <a
+                  href="mailto:info@example.com"
+                  class="footer-contact__link footer-contact__link--mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer-contact__item">
+                <a
+                  href="tel:+52 55 5529 6000"
+                  class="footer-contact__link footer-contact__link--phone"
+                  >+52 55 5529 6000</a
+                >
+              </li>
+            </ul>
+          </address>
+        </section>
+        <section class="footer-icons">
+          <p class="footer-icons--title">FIND US AT</p>
+          <ul class="footer-icons__list">
+            <li class="footer-icons__item">
+              <div class="icons__item--container">
+                <svg width="20px" height="20px">
+                  <use href="./Img/icon.svg#icon-Instagram2"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="footer-icons__item">
+              <div class="icons__item--container">
+                <svg width="20px" height="20px">
+                  <use href="./Img/icon.svg#icon-Twitter2"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="footer-icons__item">
+              <div class="icons__item--container">
+                <svg width="20px" height="20px">
+                  <use href="./Img/icon.svg#icon-Facebook2"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="footer-icons__item">
+              <div class="icons__item--container">
+                <svg width="20px" height="20px">
+                  <use href="./Img/icon.svg#icon-Linkedin2"></use>
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-subscribe">
+          <p class="footer-subscribe--title">Subscribe to the newsletter</p>
+          <form class="form-subscribe">
+            <label class="form-subscribe--label" for="email"></label>
+            <input
+              type="email"
+              name="user-mail"
+              id="email"
+              class="form-subscribe--email"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="form-subscribe--button">
+              Subscribe
+              <svg
+                width="24px"
+                height="24px"
+                class="form-subscribe--button--icon"
+              >
+                <use href="./Img/icon.svg#icon-enviar"></use>
+              </svg>
+            </button>
+          </form>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

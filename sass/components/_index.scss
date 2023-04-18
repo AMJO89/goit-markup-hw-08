@@ -1,0 +1,22 @@
+.box-main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    position: relative;
+    & .main--tittle {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+}
+
+@import "../sections/index/banner";
+@import "../sections/index/advantages";
+@import "../sections/index/what";
+@import "../sections/index/team";
+@import "../sections/index/clients";

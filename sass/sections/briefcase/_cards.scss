@@ -1,0 +1,75 @@
+.briefcase-cards__list{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 82px;
+    .briefcase-cards__item {
+        width: 370px;
+        height: 404px;
+        left: 647px;
+        top: 263px;
+        background-color: $primary-background-color;
+        border: 1px solid #EEEEEE;
+        margin: 30px 0px;
+        display: flex;
+        flex-direction: column;
+        &:hover {
+            box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+            border: 1px solid #eeeeee;
+            cursor: pointer;
+        }
+    }
+}
+
+.card__product{
+    width: 370px;
+    height: 294px;
+    overflow: hidden;
+    position: relative;
+}
+
+.briefcase-cards__item .product__overlap {
+    width: 370px;
+    height: 294px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: $primary-background-color;
+    background: rgba(33, 150, 243, 0.9);
+    padding: 63px 24px;
+    position: absolute;
+    transform: translatey(100%); /* % positivo es de abajo hacia arriba en el eje y*/
+}
+.briefcase-cards__item:hover .product__overlap{
+    top: 0;
+    transition: 250ms;
+    transition-timing-function: $timing-function;
+    transform: translatey(0);
+}
+
+.product__title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    text-transform: capitalize;
+    text-align:justify;
+    width: 322px;
+    height: 36px;
+    left: calc(50% - 322px/2 - 400px);
+    top: calc(50% - 36px/2 - 334px);
+    letter-spacing: 0.06em;
+    margin: 20px 24px 2px 24px;
+}
+.product__text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    width: 322px;
+    height: 30px;
+    left: calc(50% - 322px/2 - 400px);
+    top: calc(50% - 30px/2 - 297px);
+    margin: 2px 24px 20px 24px;;
+}
