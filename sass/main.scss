@@ -4,23 +4,3 @@
 @import "./components/index";
 @import "./components/briefcase";
 @import "./components/footer";
-
-
-/*Adaptive Design*/
-
-@media (min-width: 480px) {
-    /* estilos adicionales para pantallas con ancho mayor o igual a 480px */
-}
-@media (min-width: 480px) and (max-width: 767px) {
-    /* estilos adicionales para pantallas con ancho entre 480px y 767px */
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-    /* estilos adicionales para pantallas con ancho entre 768px y 1199px */
-}
-@media (min-width: 1200px) {
-    /* estilos adicionales para pantallas con ancho mayor o igual a 1200px */
-}
-
-
-
-PARA EL DISEÑO DE MOBILE NECESITO QUE SE VEA:  EN EL  HEADER: LOGO DE WEBSTUDIO(left 15px) Y EL MENU MOBIL(right 15px). MAIN: QUE SE VEA LAS SECCIONES: main-banner,main-advantages(que se vea de a un main-advantages__item por fila.), main-team (que se vea de a un main-team__item por fila. ), main-clients(que se vea de a dos main-clients__item por fila. ). En el footer que se vea cada seccion por fila una debajo de otra centrada.
