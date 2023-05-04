@@ -1,61 +1,65 @@
 .box-footer{
-    background-color: $secundary-background-color;
-    color:$primary-background-color;
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    & .logo{
-        font-family: 'Raleway';
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.2;
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: $secundary-background-color;
         text-decoration: none;
-        color: $accent-color;
+        font-weight: 500;
+        font-size: 1em;
+        line-height: 1.25em;
+        letter-spacing: 0.03em; 
+        list-style: none;
+        padding: 60px 15px;
     }
 }
 
-/*contact*/
-
+/*footer-contact*/
 .footer-contact{
-    padding: 94px 0px;
-    width: 231px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    .footer-contact__link{
+    justify-content: center;
+    align-items: center;
+    .logo{
+        font-family: 'Raleway';
         text-decoration: none;
+        color: $primary-background-color;
+        font-weight: 700;
+        letter-spacing: 0.06em;  
+        font-size: 1.5em;
+        line-height: 1.1667em;
+        padding-bottom: 28px;
+        .logo--blue{
+            color: $accent-color;
+        }
+    }
+    .footer-contact__list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        .footer-contact__link{
+            text-decoration: none;
+        }
     }
 }
-
 .footer-contact__link--address{
     color:$primary-background-color;
     &:hover{
         color:$accent-color;
     }
 }
-
 .footer-contact__link--mail,
 .footer-contact__link--phone{
     color:$color-text-secundary;
+    &:hover{
+        color:$accent-color;
+    }
 }
-.footer-contact__link--mail:hover,
-.footer-contact__link--phone:hover{
-    color:$accent-color;
-} 
 
-/*icons*/
-
+/*footer-icons*/
 .footer-icons{
-    padding: 94px 0px;
-    margin-left: 70px;
-    width: 206px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
