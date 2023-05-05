@@ -1063,7 +1063,7 @@ textarea#comments {
   padding: 60px 15px;
 }
 
-/*contact*/
+/*footer-contact*/
 .footer-contact {
   display: flex;
   flex-direction: column;
@@ -1076,8 +1076,8 @@ textarea#comments {
   color: #FFFFFF;
   font-weight: 700;
   letter-spacing: 0.06em;
-  font-size: 1.5em;
-  line-height: 1.1667em;
+  font-size: 24px;
+  line-height: 28px;
   padding-bottom: 28px;
 }
 .footer-contact .logo .logo--blue {
@@ -1110,32 +1110,30 @@ textarea#comments {
   color: #2196F3;
 }
 
-/*icons*/
+/*footer-icons*/
 .footer-icons {
-  padding: 94px 0px;
-  margin-left: 70px;
-  width: 206px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-}
-.footer-icons .footer-icons--title {
+  justify-content: center;
+  align-items: center;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
+  letter-spacing: 0.00042em;
   font-size: 14px;
   line-height: 16px;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-bottom: 20px;
   color: #FFFFFF;
+  padding: 60px 0;
+}
+.footer-icons .footer-icons--title {
+  padding-bottom: 20px;
 }
 .footer-icons .footer-icons__list {
-  width: 206px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 10px;
+  width: 206px;
 }
 
 .icons__item--container {
@@ -1154,34 +1152,32 @@ textarea#comments {
   fill: #FFFFFF;
 }
 
-/*Subscribe*/
+/*footer-subscribe*/
 .footer-subscribe {
-  padding: 94px 0px;
-  margin-left: 109px;
-  width: 570px;
-  height: 86px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .footer-subscribe .footer-subscribe--title {
   color: #FFFFFF;
+  text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 20px;
 }
 .footer-subscribe .form-subscribe {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 20px;
 }
 
 .form-subscribe--email {
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding: 15px 16px;
-  margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -1202,17 +1198,15 @@ textarea#comments {
   justify-content: center;
   width: 200px;
   height: 50px;
-  padding: 10px 28px;
+  padding: 10px 28px 10px 43px;
   color: #FFFFFF;
   background-color: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1px solid transparent;
   border-radius: 4px;
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
+  font-size: 1em;
+  line-height: 1.875em;
   letter-spacing: 0.06em;
   transition-property: background-color;
   transition-duration: 250ms;
@@ -1220,7 +1214,76 @@ textarea#comments {
 }
 .form-subscribe--button:hover {
   background-color: #188ce8;
+  border: 1px solid #2196F3;
 }
 .form-subscribe--button .form-subscribe--button--icon {
   margin-left: 10px;
+}
+
+@media (min-width: 768px) {
+  .box-footer .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .footer-contact {
+    width: 50%;
+    text-align: center;
+    float: left;
+  }
+  .footer-icons {
+    width: 50%;
+    text-align: center;
+    justify-content: flex-start;
+    padding: 0;
+    float: right;
+  }
+  .footer-subscribe {
+    text-align: center;
+    margin-top: 60px;
+  }
+}
+@media (min-width: 1600px) {
+  .box-footer .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 60px 215px;
+  }
+  .footer-contact {
+    width: 25%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-contact .logo {
+    font-size: 26px;
+    line-height: 31px;
+  }
+  .footer-contact .footer-contact__list {
+    align-items: flex-start;
+  }
+  .footer-icons {
+    width: 25%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .footer-subscribe {
+    width: 570px;
+    flex-direction: column;
+    margin-top: 0;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .footer-subscribe .form-subscribe {
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    gap: 0;
+  }
+  .footer-subscribe .form-subscribe .form-subscribe--email {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+  }
 }/*# sourceMappingURL=main.css.map */
