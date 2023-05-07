@@ -5,20 +5,24 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  & .container{
-    margin: 50px 200px 0px 200px ;
+  .container{
+    margin: 30px 15px;
   }
 }
 
 .main-team__list{
-  width: 1200px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   background-color: $primary-background-color;
   text-align: center;
   list-style: none;
   background: #F5F4FA;
-  & .main-team__item {
+  gap: 30px;
+  .main-team__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     border: 1px solid #eeeeee;
@@ -35,6 +39,7 @@
     text-align: center;
     letter-spacing: 0.03em;
 }
+
 .main-team__text{
   font-weight: 400;
   font-size: 16px;
@@ -45,26 +50,48 @@
 }
 
 .team-sociaL__icons{
-  width: 206px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  margin: 16px 32px 30px 32px;
-}
-.social__icons--container{
-  fill: $color-icons;
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  border-radius: 50%;
-  &:hover{
-    background: $accent-color;
-    fill: $primary-background-color;
+  padding: 16px 122px 24px 122px;
+  .social__icons--container{
+    fill: $color-icons;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    &:hover{
+      background: $accent-color;
+      fill: $primary-background-color;
+    }
   }
 }
 
+@media (min-width: 768px){
+  .main-team__list{
+    flex-direction: row;
+    flex-wrap: wrap;
+    .main-team__item {
+      width: 354px;
+    }
+  }
+}
+@media (min-width: 1600px){
+  .main-team{
+    .container{
+      margin: 50px 200px 0px 200px ;
+    }
+  }
+  
+  .main-team__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    .main-team__item {
+      width: 270px;
+    }
+  }
+}
